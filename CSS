@@ -1,0 +1,131 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ส่วนหัว (Header) */
+header {
+    background-color: #4CAF50; /* สีเขียว */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* ส่วนนำทาง (Navigation) */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* ส่วนเนื้อหาหลัก (Main) */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* หมวดหมู่เมนู */
+.menu-category {
+    margin-bottom: 40px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.menu-category h3 {
+    color: #333;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* รายการเมนู */
+.menu-list {
+    display: flex; /* จัดวางรายการเมนูแบบเป็นแถว */
+    flex-wrap: wrap; /* ให้ขึ้นบรรทัดใหม่เมื่อเนื้อที่ไม่พอ */
+    gap: 20px; /* ระยะห่างระหว่างรายการเมนู */
+}
+
+.menu-item {
+    flex: 1 1 300px; /* ยืดหดได้, ขนาดพื้นฐาน 300px */
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item h4 {
+    color: #4CAF50;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.menu-item .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #e91e63; /* สีชมพูสำหรับราคา */
+}
+
+/* ส่วนท้าย (Footer) */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
